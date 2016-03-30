@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<multiView>
+	<version>3.2.4-20160315</version>
+	<!-- fiveChannel>
+		<no>398</no>
+		<enable>false</enable>
+		<triggerUrl>http://211.113.46.215</triggerUrl>
+		<id>444</id>
+	</fiveChannel-->
+	<fiveChannel>
+		<no>398</no>
+		<enable>true</enable>
+		<triggerUrl>http://211.113.46.215</triggerUrl>
+		<id>444</id>
+	</fiveChannel>
+	<multiChannel name="스포츠" disable="false" otv="943" ots="943" uhd="943">
+		<channel name="SPOTV">
+			<otv no="51" sid="350" />
+			<ots no="49" sid="262" />
+		</channel>
+		<channel name="SBS Sports">
+			<otv no="58" sid="387" />
+			<ots no="53" sid="212" />
+		</channel>
+		<channel name="KBS N Sports">
+			<otv no="59" sid="383" />
+			<ots no="51" sid="342" />
+		</channel>
+		<channel name="MBC SPORTS+">
+			<otv no="60" sid="715" />
+			<ots no="52" sid="230" />
+		</channel>
+	</multiChannel>
+	<multiChannel name="쇼핑" disable="false" otv="941" uhd="941">
+		<channel name="CJ오쇼핑+">
+			<otv no="4" sid="316" />
+		</channel>
+		<channel name="NS Shop+">
+			<otv no="6" sid="308" />
+		</channel>
+		<channel name="GS MY SHOP">
+			<otv no="8" sid="310" />
+		</channel>
+		<channel name="홈&amp;쇼핑">
+			<otv no="10" sid="362" />
+		</channel>
+	</multiChannel>
+	<multiChannel name="쇼핑" disable="false" ots="941">
+		<channel name="현대홈쇼핑+Shop">
+			<otv no="14" sid="304" />
+			<ots no="6" sid="374" />
+		</channel>
+		<channel name="CJ오쇼핑+">
+			<otv no="4" sid="316" />
+			<ots no="8" sid="210" />
+		</channel>
+		<channel name="홈&amp;쇼핑">
+			<otv no="10" sid="362" />
+			<ots no="10" sid="377" />
+		</channel>
+		<channel name="롯데홈쇼핑">
+			<otv no="12" sid="323" />
+			<ots no="12" sid="447" />
+		</channel>
+	</multiChannel>
+	<multiChannel name="지상파" disable="true" otv="943" ots="943" uhd="943">
+		<channel name="SBS">
+			<otv no="5" sid="156 , 141" />
+			<ots no="5" sid="401" />
+		</channel>
+		<channel name="KBS2">
+			<otv no="7" sid="152 , 305" />
+			<ots no="7" sid="402" />
+		</channel>
+		<channel name="KBS1">
+			<otv no="9" sid="120 , 111 , 495" />
+			<ots no="9" sid="403" />
+		</channel>
+		<channel name="MBC">
+			<otv no="11" sid="155 , 121" />
+			<ots no="11" sid="404" />
+		</channel>
+	</multiChannel>
+	<multiChannel name="영화" disable="false" otv="941" ots="941" uhd="941">
+		<channel name="채널CGV">
+			<otv no="29" sid="345" />
+			<ots no="65" sid="507" />
+		</channel>
+		<channel name="OCN">
+			<otv no="28" sid="302" />
+			<ots no="63" sid="368" />
+		</channel>
+		<channel name="Sky Drama">
+			<otv no="30" sid="494" />
+			<ots no="40" sid="370" />
+		</channel>
+		<channel name="수퍼액션">
+			<otv no="32" sid="312" />
+			<ots no="64" sid="371" />
+		</channel>
+	</multiChannel>
+</multiView>

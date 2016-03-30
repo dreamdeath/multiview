@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<multiView>
+	<version>2.1.0-20160330</version>
+	<rpApi>
+		<url>http://webui.ktipmedia.co.kr:8080/rp-api</url>
+		<serviceId>ITV5CHSVCT</serviceId>
+		<wmocKey>5ChaneL</wmocKey>
+	</rpApi>
+	<mashUpApi>
+		<id>101</id>
+		<url>http://211.113.46.215/mashup_baseball</url>
+	</mashUpApi>
+	<fourChannelApp>938</fourChannelApp>
+	
+	<channels name="스포츠">
+		<otv type="no" name="SPOTV">51</otv>
+		<otv type="no" name="SKY SPORTS">54</otv>
+		<otv type="no" name="SBS SPORTS">58</otv>
+		<otv type="no" name="KBS N SPORTS">59</otv>
+		<otv type="no" name="MBC Sports +">60</otv>
+		<!-- <otv type="sid" name="SPOTV">350</otv>
+		<otv type="sid" name="SKY SPORTS">494</otv>
+		<otv type="sid" name="SBS SPORTS">387</otv>
+		<otv type="sid" name="KBS N SPORTS">383</otv>
+		<otv type="sid" name="MBC Sports +">715</otv> -->
+
+		<ots type="no" name="SPOTV">49</ots>
+		<ots type="no" name="SKY SPORTS">50</ots>
+		<ots type="no" name="SBS SPORTS">53</ots>
+		<ots type="no" name="KBS N SPORTS">51</ots>
+		<ots type="no" name="MBC Sports +">52</ots>
+	</channels>
+</multiView>

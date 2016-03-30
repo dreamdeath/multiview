@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/app.css"/>
+        <script>
+            (function() {
+                var supportMosaic = window.oipfObjectFactory.createConfigurationObject().configuration.getText('mosaic_support');
+                var isOTS = window.oipfObjectFactory.createConfigurationObject().configuration.getText('skylife_support');
+                var isUHD = window.oipfObjectFactory.createConfigurationObject().configuration.getText('support.uhd');
+               // if (supportMosaic !== 'true' || isOTS === 'true') {
+               //     location.href = './svr/index.html';
+               // }
+            })();
+        </script>
+    </head>
+    <body>
+    	<script src="scripts/vendors.js"></script>
+        <script src="scripts/app.js?bb"></script>        
+    </body>
+</html>

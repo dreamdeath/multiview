@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="pragma" content="no-cache" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MultiView</title>
+<link rel="stylesheet" href="css/app.css?a"/>
+</head>
+
+<body onload="MultiView.app.Main.init();">
+	<object type="video/broadcast" id="videoObject" class="video"></object>
+  
+  <div class="main">
+
+    <div class="display">
+      <div class="displayItem">
+        <div class="inner basic">
+        <!--span class="ch_Name">KBS</span>
+        <ul class="ch_Box">
+          <li class="ch_Box_name">가나다라마바사아자차카타파하가나다라마나</li>
+          <li class="ch_Box_bar">
+            <div class="ch_L">11:00</div>
+            <div class="fl rBox">
+              <div class="rBar" style="width:30%"></div>
+            </div>
+            <div class="ch_R">22:00</div>
+          </li>
+        </ul-->
+        </div>
+      </div>
+      <div class="displayItem">
+        <div class="inner basic"></div>
+      </div>
+      <div class="displayItem">
+        <div class="inner basic"></div>
+      </div>
+      <div class="displayItem">
+        <div class="inner basic"></div>
+      </div>
+    </div>
+
+    <div id="menuBtn" class="ch_view"></div>
+    
+    <!-- 채널 4개 -->
+    <div id="menu" class="menu4 hide">   
+      <ul>
+        <li class="menu_left"></li>
+        <li class="menu_box">
+          <!--ul >
+            <li class="menuItem focus">
+              <span class="name">스포츠<img src="img/uhd_logo.png"></span>
+            </li>
+            <li class="menuItem select">
+              <span class="name">쇼핑</span>
+            </li>
+            <li class="menuItem basic">
+              <span class="name">지상파</span>
+            </li>
+            <li class="menuItem basic">
+              <span class="name">영화</span>
+            </li>
+          </ul-->
+        </li>
+        <li class="menu_right"></li>
+      </ul>
+    </div>
+    <!-- 5채널 프로야구 MASHUP -->
+	<div id="sportChannel" style="display:none;">
+        <div class="title">프로야구 5채널 보기</div>
+    </div>
+    <div id="alarm2" class="pop_bgcolor2" style="display:none;">
+    <div class="pop_notice">
+        <div class="pop_notice_txt01">
+            위성신호가 미약하여
+            4채널 서비스가 종료됩니다 <br>
+            잠시 후 다시 이용해 주세요
+        </div>
+        <ul class="ch_btn" style="padding-left:130px">
+            <li class="focus" style="">확인</li>
+        </ul>
+    </div>
+</div>
+  </div><!-- //Main bg -->
+  
+  <script src="scripts/app.js?2"></script>
+</body>
+</html>

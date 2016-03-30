@@ -1,0 +1,35 @@
+#ID_table {
+    align: center;
+    width: 940px;
+    height: 520px;
+}
+
+#ID_tr01 {
+    height:80%;
+}
+
+#chinfo {
+    background-color: #C8FFFF;
+    width: 20%;
+}
+
+#ID_td01 {
+    width: 80%;
+}
+
+#ID_tr02 {
+    height: 20%;
+}
+
+#menu {
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFFFC8;
+    width: 20%;
+}
+
+#chmessage {
+    overflow-y: scroll;
+    background-color: #C8FFFF;
+    width: 80%;
+}

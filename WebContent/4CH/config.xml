@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets" 
+    id="http://www.olleh.com/tv/multiviewwidget-bmt-debug" version="3.2.3-20151125"
+    width="1280" height="720" opacity="0" viewmodes="free" >
+
+    <name>MultiView</name>
+
+    <description>olleh tv Widget - MultiView</description>
+
+    <content src="index.html">index.html</content>
+
+    <icon src="images/icon.png"/>
+
+    <author email="widget@olleh.com" href="http://www.olleh.com">Mr. olleh</author>
+
+    <license src="http://www.olleh.com">COPYRIGHT(C)2013 KT CORP.ALL RIGHTS RESERVED</license>
+
+    <access origin="http://www.olleh.com/widget" subdomains="true"/>
+
+    <network-access subdomains="true" uri="http://www.olleh.com/widget"/>
+
+    <billing required="true"/>
+
+</widget>

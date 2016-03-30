@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets" height="720" id="http://www.olleh.com/tv/channel" opacity="0" version="1.0" viewmodes="free" width="1280">
+    <!-- Name of the widget -->
+    <name>channel</name>
+    <!-- Description is shown when installing widget -->
+    <description>olleh tv WebApp SDK - Channel Change Sample</description>
+    <!-- Start page for widget -->
+    <content src="index.html">index.html</content>
+    <!-- Default icon for widget -->
+    <icon src="images/icon.png"/>
+    <!-- Widget author -->
+    <author email="widget@olleh.com" href="http://www.olleh.com">Mr. Olleh</author>
+    <license src="http://www.olleh.com">COPYRIGHT(C)2013 KT CORP.ALL RIGHTS RESERVED</license>
+    <access origin="http://www.olleh.com/widget" subdomains="true"/>
+    <network-access subdomains="true" uri="http://www.olleh.com/widget"/>
+    <billing required="true"/>
+</widget>

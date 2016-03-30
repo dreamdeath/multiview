@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/app.css?cccccc"/>
+        <script>
+            (function() {
+                var supportMosaic = window.oipfObjectFactory.createConfigurationObject().configuration.getText('mosaic_support');
+                var isOTS = window.oipfObjectFactory.createConfigurationObject().configuration.getText('skylife_support');
+                console.log("isOTS : "+isOTS)
+                if (supportMosaic !== 'true' || isOTS === 'true') {
+                	
+                    location.href = './old/index.html';
+                    return false;
+                }
+            })();
+        </script>
+    </head>
+    <body>
+        <object type="video/broadcast" id="tempObject" class='video'></object>
+        <div id="viewPort" class="view_port standardMode" style="display:none;">
+            <div id="menuBtn" class="ch_view"></div>
+            <!-- 채널 4개 -->
+            <!-- Menu -->
+            <div id="menu" class="menu hide">
+                <ul class="menu_box">
+                <!--li class="menuItem focus"><span class="uhd">스포츠</span></li>
+                <li class="menuItem basic"><span>쇼핑</span></li>
+                <li class="menuItem basic"><span>지상파</span></li>
+                <li class="menuItem select"><span>영화</span></li>
+                <li class="menuItem basic"><span class="add">등록</span></li>
+                <li class="menuItem basic"><span class="add">등록</span></li>
+                <li class="menuItem basic"><span class="add">등록</span></li>
+            <li class="menuItem basic"><span class="add">등록</span></li-->
+        </ul>
+    </div>
+
+    <div id="sportChannel" style="display:none;">
+        <div class="title">프로야구 5채널 보기</div>
+    </div>
+    <div id="emptyDialog" style="display:none;">
+        <div class="basic">마이 채널 추가</div>
+    </div>
+
+    <div id="menuDialog" class="menuDialog3" style="display: none;">
+        <ul>
+            <li class="pop_bg"><div class="">채널 명 변경</div></li>
+            <li class="pop_bg"><div class="focus">마이 채널 1 삭제</div></li>
+            <li class="pop_bg">
+                <div class="">
+                    <span class="pop_a_l"></span> <span class="pop_a_t standard">보기 방식</span> <span class="pop_a_r"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="registrationDialog" class="pop_bgcolor2" style="display:none;">
+        <div class="pop_save">
+            <p class="pop_save_txt01">
+            이미 마이 채널 4개가 등록되어 있습니다<br>
+            <span class="pop_save_txt02">선택한 채널을 저장할 마이 채널을 선택하세요</span>
+            </p>
+            <div id="inputBox" class="basic"></div>
+            <ul id="arrowBtn">
+                <li class="left"></li>
+                <li class="right"></li>
+            </ul>
+
+            <input name="" type="text" maxlength="20">
+            <ul class="ch_pop">
+                <li>008 <p>오쇼핑</p></li>
+                <li>011 <p>MBC</p></li>
+                <li>032 <p>네셔널지오그라픽</p></li>
+                <li>032 <p>네셔널지오그라픽</p></li>
+            </ul>
+            <ul class="ch_btn">
+                <li class="focus">확인</li>
+                <li class="basic">취소</li>
+            </ul>
+        </div>
+    </div>
+    <div id="messageDialog" class="menuHide" style="display:none;">
+        <img src="images/icon_book_b.png" style="vertical-align:-11px;"> {savedUserChannel} 로 저장되었습니다.
+    </div>
+    <div id="editBtn" class="edit_btn menuHide">
+        <ul>
+            <li class="key_noti"><img src="images/key_noti.png" width="40" height="40"></li>
+            <li id="message" class="mych_txt">4채널 편집</li>
+        </ul>
+    </div>
+    <div id="registrationBar" class="registrationBar hide">
+        <ul>
+            <li class="Btm_txt">변경된 채널을 마이 채널로 저장하시겠습니까?</li>
+            <li class="Btm_btn"> <span id="ok_btn" class="focus">저장</span><span id="cancel_btn" class="basic">취소</span></li>
+        </ul>
+    </div>
+</div>
+<div id="alarm" class="pop_bgcolor2" style="display:none;z-index:10;">
+    <div class="pop_notice">
+        <div class="pop_notice_txt01">
+            네트워크가 잠시 원활하지 않아
+            4채널 서비스가 종료됩니다 <br>
+            잠시 후 다시 이용해 주세요
+        </div>
+        <ul class="ch_btn" style="padding-left:130px">
+            <li class="focus" style="">확인</li>
+        </ul>
+    </div>
+</div>
+<div id="alarm2" class="pop_bgcolor2" style="display:none;z-index:10;">
+    <div class="pop_notice">
+        <div class="pop_notice_txt01">
+            위성신호가 미약하여
+            4채널 서비스가 종료됩니다 <br>
+            잠시 후 다시 이용해 주세요
+        </div>
+        <ul class="ch_btn" style="padding-left:130px">
+            <li class="focus" style="">확인</li>
+        </ul>
+    </div>
+</div>
+
+<script src="scripts/vendors.js"></script>
+<script src="scripts/app.js?g11"></script>
+</body>
+</html>
